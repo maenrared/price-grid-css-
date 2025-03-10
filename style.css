@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Karla", serif;}
+    font-family: "Karla",serif;}
 
 .big-box{
     background-color: white;
@@ -95,3 +95,55 @@ button{
     
 .attribution a { 
     color: hsl(228, 45%, 44%); }
+/* Tablets and smaller desktops (up to 991px) */
+@media (max-width: 991px) {
+    .big-box {
+        width: 70%; /* Adjust width for medium screens */
+    }
+
+    .sec-1 p {
+        width: 100%; /* Ensure full-width text */
+    }
+
+    .sec-2 {
+        flex-direction: column; /* Stack sections for better fit */
+    }
+
+    .sub, .why-us {
+        flex-basis: 100%; /* Make sections full width */
+        padding: 30px;
+    }
+}
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .big-box {
+        width: 90%; /* Use almost full width on small screens */
+    }
+
+    .sec-1 {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .sec-1 h1 {
+        font-size: 22px; /* Reduce heading size */
+    }
+
+    .sec-1 h2 {
+        font-size: 16px;
+    }
+
+    .sec-1 p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .sub, .why-us {
+        padding: 20px; /* Reduce padding */
+    }
+
+    button {
+        padding-block: 8px; /* Slightly smaller button */
+    }
+}
+
